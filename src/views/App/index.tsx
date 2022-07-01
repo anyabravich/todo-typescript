@@ -1,11 +1,14 @@
-import React from 'react'
+import React from 'react';
+import styles from './index.module.scss';
 
-type Props = {}
+type Props = {};
 
-const index = (props: Props) => {
+export const App: React.FC = (props: Props) => {
   return (
-    <div>index</div>
-  )
-}
-
-export default index
+    <article className={styles.article}>
+      <h1 className={styles.articleTitle}>To Do App</h1>
+      <section className={styles.articleSection}></section>
+      <section className={styles.articleSection}></section>
+    </article>
+  );
+};
