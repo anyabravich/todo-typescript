@@ -26,7 +26,7 @@
   }
 
   &EditTitle {
-    font: 1rem/1em 'Roboto', sans-serif;
+    font: 1rem/1em "Roboto", sans-serif;
     border: none;
     padding: 5px;
     background: none;
@@ -49,14 +49,14 @@
   }
 
   &Edit {
-    background-image: url('./images/edit.svg');
+    background-image: url("./images/edit.svg");
   }
 
   &Remove {
-    background-image: url('./images/trash.svg');
+    background-image: url("./images/trash.svg");
   }
 
   &Save {
-    background-image: url('./images/check.svg');
+    background-image: url("./images/check.svg");
   }
 }

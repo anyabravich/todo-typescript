@@ -1,8 +1,8 @@
-import React from 'react';
-import styles from './index.module.scss';
-import { useToDoStore } from '../../data/stores/useToDoStore';
-import { InputPlus } from '../components/InputPlus';
-import { InputTask } from '../components/InputTask';
+import React from "react";
+import styles from "./index.module.scss";
+import { useToDoStore } from "../../data/stores/useToDoStore";
+import { InputPlus } from "../components/InputPlus";
+import { InputTask } from "../components/InputTask";
 
 type Props = {};
 

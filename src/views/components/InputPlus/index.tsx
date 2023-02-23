@@ -1,15 +1,15 @@
-import React, { useCallback, useState } from 'react';
-import styles from './index.module.scss';
+import React, { useCallback, useState } from "react";
+import styles from "./index.module.scss";
 
 interface InputPlusProps {
   onAdd: (title: string) => void;
 }
 
 export const InputPlus: React.FC<InputPlusProps> = ({ onAdd }) => {
-  const [inputValue, setInputValue] = useState('');
+  const [inputValue, setInputValue] = useState("");
   const addTask = useCallback(() => {
     onAdd(inputValue);
-    setInputValue('');
+    setInputValue("");
   }, [inputValue]);
   return (
     <div className={styles.inputPlus}>
@@ -21,7 +21,7 @@ export const InputPlus: React.FC<InputPlusProps> = ({ onAdd }) => {
           setInputValue(e.target.value);
         }}
         onKeyDown={(e) => {
-          if (e.key === 'Enter') {
+          if (e.key === "Enter") {
             addTask();
           }
         }}

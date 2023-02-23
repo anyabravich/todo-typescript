@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react';
-import styles from './index.module.scss';
+import React, { useEffect, useRef, useState } from "react";
+import styles from "./index.module.scss";
 
 interface InputTaskProps {
   id: string;
@@ -9,7 +9,13 @@ interface InputTaskProps {
   onRemoved: (id: string) => void;
 }
 
-export const InputTask: React.FC<InputTaskProps> = ({ id, title, onDone, onEdited, onRemoved }) => {
+export const InputTask: React.FC<InputTaskProps> = ({
+  id,
+  title,
+  onDone,
+  onEdited,
+  onRemoved,
+}) => {
   const [checked, setChecked] = useState(false);
   const [isEditMode, setIsEditMode] = useState(false);
   const [value, setValue] = useState(title);
@@ -46,7 +52,7 @@ export const InputTask: React.FC<InputTaskProps> = ({ id, title, onDone, onEdite
               setValue(e.target.value);
             }}
             onKeyDown={(e) => {
-              if (e.key === 'Enter') {
+              if (e.key === "Enter") {
                 onEdited(id, value);
                 setIsEditMode(false);
               }
